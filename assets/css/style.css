@@ -259,13 +259,9 @@ footer p {
 /* ---------------------about-content-section------------------- */
 
 
-.card {
-    padding: 8px 14px;
-    text-align: center;
-}
-
 .card img {
     margin: 0 auto;
+    margin-top: 20px;
     width: 80px;
     height: 80px;
 }
