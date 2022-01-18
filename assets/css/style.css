@@ -8,6 +8,8 @@
 
 :root {
     --primary-color: #0eb582;
+    --bg-hover: #1aaa7a;
+    --p-color: gray;
     --black: #444;
     --white: #fff;
 }
@@ -29,4 +31,239 @@
 .btn {
     background-color: var(--primary-color) !important;
     border: none;
+    width: 120px;
+}
+
+.btn:hover {
+    background-color: var(--bg-hover) !important;
+}
+
+/* --------------top-course-section-------------- */
+.top-course {
+    position: relative;
+    height: 60vh;
+}
+
+.product {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translate(10%, 0%);
+    width: 300px;
+    height: 400px;
+    background-color: rgba(135, 235, 173, 0.233);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.product1 {
+    position: absolute;
+    top: 0;
+    left: 33.1%;
+    transform: translate(12%, 0%);
+    width: 300px;
+    height: 400px;
+    background-color: rgba(135, 235, 173, 0.233);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.product2 {
+    position: absolute;
+    top: 0;
+    left: 64%;
+    transform: translate(17%, 0%);
+    width: 300px;
+    height: 400px;
+    background-color: rgba(135, 235, 173, 0.233);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.product .imgbox {
+    height: 100%;
+    box-sizing: border-box
+}
+
+.product1 .imgbox {
+    height: 100%;
+    box-sizing: border-box
+}
+
+.product2 .imgbox {
+    height: 100%;
+    box-sizing: border-box
+}
+
+.product .imgbox img {
+    display: block;
+    width: 80%;
+    margin: 10px auto 0
+}
+
+.product1 .imgbox img {
+    display: block;
+    width: 80%;
+    margin: 10px auto 0
+}
+
+.product2 .imgbox img {
+    display: block;
+    width: 80%;
+    margin: 10px auto 0
+}
+
+.specifies {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    bottom: -200px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .5s
+}
+
+.product:hover .specifies {
+    bottom: 0
+}
+
+.product1:hover .specifies {
+    bottom: 0
+}
+
+.product2:hover .specifies {
+    bottom: 0
+}
+
+.specifies h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 100%
+}
+
+.specifies .btn {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    margin: 10px 0 0;
+    width: 100%;
+    font-size: 13px;
+    border-radius: 2px
+}
+
+/* ---------------footer-section---------------- */
+footer {
+    background-color: rgba(135, 235, 173, 0.233);
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+footer p {
+    color: var(--p-color);
+}
+
+.media-icon ul {
+    padding: 0;
+}
+
+.media-icon ul li {
+    list-style: none;
+}
+
+.media-icon a {
+    text-decoration: none;
+    color: var(--p-color);
+    transition: .5s;
+}
+
+.media-icon a:hover {
+    color: var(--black);
+}
+
+.media-icon i {
+    margin-right: 5px;
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.footer-links {
+    margin-top: 45px;
+}
+
+.footer-links ul {
+    margin-top: 22px;
+    padding: 0;
+}
+
+.footer-links ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: var(--p-color);
+    transform: .5s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-links input[type=email] {
+    width: 200px;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--p-color);
+    outline: none;
+}
+
+
+
+/* media query for mobile */
+@media screen and (max-width: 668px) {
+    .head-navbar {
+        text-align: center;
+    }
+
+    .top-course {
+        position: relative;
+        height: 100vh;
+    }
+
+    .product {
+        top: 0;
+        left: 0;
+        width: 310px;
+    }
+
+    .product1 {
+        top: 55%;
+        left: 0;
+        width: 310px;
+    }
+
+    .product2 {
+        top: 110%;
+        left: 0;
+        width: 310px;
+    }
+
+    footer {
+        padding-left: 20px;
+        margin-top: 140%;
+    }
+
+    .footer-links input[type=email] {
+        width: 100%;
+    }
 }
