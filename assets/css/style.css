@@ -28,6 +28,10 @@
 }
 
 /* ---------------slide-section----------------- */
+.hero-slide {
+    margin-top: 80px;
+}
+
 .btn {
     background-color: var(--primary-color) !important;
     border: none;
@@ -240,6 +244,10 @@ footer p {
 
 /* media query for mobile */
 @media screen and (max-width: 668px) {
+    .hero-slide {
+        margin-top: 125px;
+    }
+
     .head-navbar {
         text-align: center;
     }
