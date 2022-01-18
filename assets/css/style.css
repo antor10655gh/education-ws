@@ -240,9 +240,39 @@ footer p {
     outline: none;
 }
 
+/* ----------------------------------------
+   ------------About-Section---------------
+-------------------------------------------*/
+.about-section {
+    background: url(../images/heading-bg.jpg) no-repeat center center fixed;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.about-section nav {
+    margin-left: 30px;
+}
+
+/* ---------------------about-content-section------------------- */
 
 
-/* media query for mobile */
+.card {
+    padding: 8px 14px;
+    text-align: center;
+}
+
+.card img {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+}
+
+
+
+/* ------------media query for mobile------------ */
 @media screen and (max-width: 668px) {
     .hero-slide {
         margin-top: 125px;
