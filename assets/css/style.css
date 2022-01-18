@@ -298,7 +298,29 @@ footer p {
     }
 
     .product2 {
-        top: 10%;
+        top: 22%;
         left: -20px;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1400px) {
+    .container {
+        width: 100%;
+    }
+
+    .product {
+        left: -40px;
+    }
+
+    .product1 {
+        left: -30px;
+    }
+
+    .product2 {
+        left: -30px;
     }
 }
