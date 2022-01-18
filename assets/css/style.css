@@ -194,10 +194,11 @@ footer p {
 .media-icon i {
     font-size: 35px;
     color: var(--primary-color);
+    transition: .5s;
 }
 
 .media-icon i:hover {
-    color: var(--bg-hover);
+    color: var(--black);
 }
 
 .footer-links {
@@ -217,11 +218,12 @@ footer p {
 .footer-links ul li a {
     text-decoration: none;
     color: var(--p-color);
-    transform: .5s;
+    transition: .5s;
 }
 
 .footer-links ul li a:hover {
     color: var(--primary-color);
+    border-bottom: 1px solid var(--bg-hover);
 }
 
 .footer-links input[type=email] {
