@@ -40,14 +40,17 @@
 
 /* --------------top-course-section-------------- */
 .top-course {
+    height: 70vh;
+}
+
+.my-course {
     position: relative;
-    height: 60vh;
 }
 
 .product {
     position: absolute;
     top: 0;
-    left: 25px;
+    left: 0;
     transform: translate(10%, 0%);
     width: 300px;
     height: 400px;
@@ -60,7 +63,7 @@
 .product1 {
     position: absolute;
     top: 0;
-    left: 33.1%;
+    left: 0;
     transform: translate(12%, 0%);
     width: 300px;
     height: 400px;
@@ -73,7 +76,7 @@
 .product2 {
     position: absolute;
     top: 0;
-    left: 64%;
+    left: 0;
     transform: translate(17%, 0%);
     width: 300px;
     height: 400px;
@@ -161,7 +164,6 @@
 /* ---------------footer-section---------------- */
 footer {
     background-color: rgba(135, 235, 173, 0.233);
-    margin-top: 100px;
     padding: 50px 0;
 }
 
@@ -236,31 +238,30 @@ footer p {
     }
 
     .top-course {
-        position: relative;
         height: 100vh;
     }
 
     .product {
         top: 0;
-        left: 0;
+        left: -20px;
         width: 310px;
     }
 
     .product1 {
-        top: 55%;
-        left: 0;
+        top: 85%;
+        left: -25px;
         width: 310px;
     }
 
     .product2 {
-        top: 110%;
-        left: 0;
+        top: 170%;
+        left: -40px;
         width: 310px;
     }
 
     footer {
         padding-left: 20px;
-        margin-top: 140%;
+        margin-top: 180%;
     }
 
     .footer-links input[type=email] {
