@@ -173,10 +173,12 @@ footer p {
 
 .media-icon ul {
     padding: 0;
+    display: flex;
 }
 
 .media-icon ul li {
     list-style: none;
+    margin-right: 10px;
 }
 
 .media-icon a {
@@ -190,9 +192,12 @@ footer p {
 }
 
 .media-icon i {
-    margin-right: 5px;
-    font-size: 25px;
+    font-size: 35px;
     color: var(--primary-color);
+}
+
+.media-icon i:hover {
+    color: var(--bg-hover);
 }
 
 .footer-links {
@@ -220,7 +225,7 @@ footer p {
 }
 
 .footer-links input[type=email] {
-    width: 200px;
+    width: 230px;
     padding: 10px 5px;
     margin-bottom: 15px;
     border: none;
@@ -266,5 +271,24 @@ footer p {
 
     .footer-links input[type=email] {
         width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .navbar {
+        float: right;
+    }
+
+    .logo img {
+        margin-top: 20px;
+    }
+
+    .course {
+        height: 85vh;
+    }
+
+    .product2 {
+        top: 10%;
+        left: -20px;
     }
 }
