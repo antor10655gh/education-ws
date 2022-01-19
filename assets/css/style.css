@@ -463,6 +463,10 @@ footer p {
 /* ----------------------------------------
    ------------Courses-Section---------------
 -------------------------------------------*/
+.course {
+    height: 200px;
+}
+
 .course nav {
     margin-left: 15px;
 }
@@ -505,6 +509,17 @@ footer p {
     .course nav {
         margin-left: -10px;
     }
+}
+
+@media only screen and (min-width:768px) and (max-width:990px) {
+    .course {
+        height: 10vh !important;
+    }
+
+    .course nav {
+        margin-left: 5px;
+    }
+
 }
 
 
