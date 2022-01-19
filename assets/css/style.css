@@ -69,12 +69,12 @@
 }
 
 .box4-home .box-content {
-    width: 90%;
+    width: 100%;
     height: 100%;
     padding-top: 20%;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 0;
     transform: scale(0);
     transition: all .3s ease 0s;
     background-color: #0eb58391;
@@ -115,7 +115,7 @@
 
 .box4-home .icon li a i {
     color: var(--white);
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .box4-home .icon li a {
