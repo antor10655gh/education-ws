@@ -243,7 +243,7 @@ footer p {
 /* ----------------------------------------
    ------------About-Section---------------
 -------------------------------------------*/
-.about-section {
+.all-page-section {
     background: url(../images/heading-bg.jpg) no-repeat center center fixed;
     height: 200px;
     display: flex;
@@ -252,7 +252,7 @@ footer p {
     margin-top: 100px;
 }
 
-.about-section nav {
+.all-page-section nav {
     margin-left: 30px;
 }
 
@@ -458,6 +458,55 @@ footer p {
 .fillup {
     color: var(--primary-color);
 }
+
+/* ----------------------------------------
+   ------------Courses-Section---------------
+-------------------------------------------*/
+.course nav {
+    margin-left: 15px;
+}
+
+.course-name {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.479);
+    border: 1px solid rgba(30, 148, 89, 0.479);
+    box-shadow: rgba(31, 201, 121, 0.74) 0px 5px 15px;
+}
+
+.course-name h5 {
+    font-size: 15px;
+    padding: 5px 5px 0px 5px;
+}
+
+.course-details a {
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #000;
+    background-color: rgba(30, 148, 89, 0.185);
+    border: 1px solid rgba(30, 148, 89, 0.479);
+    transition: .5s;
+}
+
+.course-details a:hover {
+    color: #fff;
+    background-color: rgba(30, 148, 89, 0.705);
+}
+
+.course-info i {
+    color: var(--primary-color);
+    margin-right: 2px;
+}
+
+
+
+
+
+
+
+
 
 
 
