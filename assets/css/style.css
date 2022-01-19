@@ -43,126 +43,90 @@
 }
 
 /* --------------top-course-section-------------- */
-.top-course {
-    height: 70vh;
-}
-
-.my-course {
+.box4-home {
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.product {
+.box4-home:before {
+    width: 0;
+    height: 200%;
     position: absolute;
     top: 0;
-    left: 0;
-    transform: translate(10%, 0%);
-    width: 300px;
-    height: 400px;
-    background-color: rgba(135, 235, 173, 0.233);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 5px;
-    overflow: hidden
+    left: -250px;
+    bottom: 0;
+    transform: skewX(-36deg);
+    transition: all .5s ease 0s;
 }
 
-.product1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(12%, 0%);
-    width: 300px;
-    height: 400px;
-    background-color: rgba(135, 235, 173, 0.233);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 5px;
-    overflow: hidden
+.box4-home:hover:before {
+    width: 200%;
 }
 
-.product2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(17%, 0%);
-    width: 300px;
-    height: 400px;
-    background-color: rgba(135, 235, 173, 0.233);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 5px;
-    overflow: hidden
-}
-
-.product .imgbox {
-    height: 100%;
-    box-sizing: border-box
-}
-
-.product1 .imgbox {
-    height: 100%;
-    box-sizing: border-box
-}
-
-.product2 .imgbox {
-    height: 100%;
-    box-sizing: border-box
-}
-
-.product .imgbox img {
-    display: block;
-    width: 80%;
-    margin: 10px auto 0
-}
-
-.product1 .imgbox img {
-    display: block;
-    width: 80%;
-    margin: 10px auto 0
-}
-
-.product2 .imgbox img {
-    display: block;
-    width: 80%;
-    margin: 10px auto 0
-}
-
-.specifies {
-    cursor: pointer;
-    position: absolute;
+.box4-home img {
     width: 100%;
-    bottom: -200px;
-    background: #fff;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: .5s
+    height: auto;
 }
 
-.product:hover .specifies {
-    bottom: 0
+.box4-home .box-content {
+    width: 90%;
+    height: 100%;
+    padding-top: 20%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: scale(0);
+    transition: all .3s ease 0s;
+    background-color: #0eb58391;
 }
 
-.product1:hover .specifies {
-    bottom: 0
-}
-
-.product2:hover .specifies {
-    bottom: 0
-}
-
-.specifies h2 {
-    margin: 0;
+.box4-home .icon,
+.box5 .icon {
+    list-style: none;
     padding: 0;
-    font-size: 25px;
-    font-weight: bold;
-    color: var(--primary-color);
-    width: 100%
 }
 
-.specifies .btn {
+.box4-home:hover .box-content {
+    transform: scale(1);
+}
+
+.box4-home .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+    margin: 0 0 10px;
+}
+
+.box4-home .post {
     display: block;
-    padding: 5px;
-    color: #fff;
-    margin: 10px 0 0;
-    width: 100%;
-    font-size: 13px;
-    border-radius: 2px
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.box4-home .icon {
+    margin: 0;
+}
+
+.box4-home .icon li {
+    display: inline-block;
+}
+
+.box4-home .icon li a i {
+    color: var(--white);
+    font-size: 32px;
+}
+
+.box4-home .icon li a {
+    display: block;
+    width: 30px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-right: 10px;
+    transition: all .3s ease 0s;
 }
 
 /* ---------------footer-section---------------- */
@@ -267,11 +231,11 @@ footer p {
 }
 
 /* --------------------expert-teacher-section-------------------- */
-.box4 {
+.box4-course {
     position: relative;
 }
 
-.box4:before {
+.box4-course:before {
     width: 0;
     height: 200%;
     background: var(--primary-color);
@@ -283,17 +247,17 @@ footer p {
     transition: all .5s ease 0s;
 }
 
-.box4:hover:before {
+.box4-course:hover:before {
     width: 200%;
 }
 
-.box4 img {
+.box4-course img {
     width: 100%;
     height: auto;
     background-color: var(--primary-color);
 }
 
-.box4 .box-content {
+.box4-course .box-content {
     width: 90%;
     height: 100%;
     padding-top: 20%;
@@ -305,24 +269,24 @@ footer p {
     background-color: #0eb5835b;
 }
 
-.box4 .icon,
+.box4-course .icon,
 .box5 .icon {
     list-style: none;
     padding: 0;
 }
 
-.box4:hover .box-content {
+.box4-course:hover .box-content {
     transform: scale(1);
 }
 
-.box4 .title {
+.box4-course .title {
     font-size: 22px;
     font-weight: 700;
     color: var(--white);
     margin: 0 0 10px;
 }
 
-.box4 .post {
+.box4-course .post {
     display: block;
     font-size: 15px;
     font-weight: 600;
@@ -330,20 +294,20 @@ footer p {
     margin-bottom: 20px;
 }
 
-.box4 .icon {
+.box4-course .icon {
     margin: 0;
 }
 
-.box4 .icon li {
+.box4-course .icon li {
     display: inline-block;
 }
 
-.box4 .icon li a i {
+.box4-course .icon li a i {
     color: var(--white);
     font-size: 32px;
 }
 
-.box4 .icon li a {
+.box4-course .icon li a {
     display: block;
     width: 30px;
     height: 35px;
@@ -354,31 +318,6 @@ footer p {
     transition: all .3s ease 0s;
 }
 
-.box5 .icon,
-.box5 .icon li {
-    display: inline-block;
-}
-
-@media only screen and (max-width:990px) {
-    .box4 {
-        margin-bottom: 30px;
-    }
-}
-
-@media only screen and (max-width:767px) {
-    .box4:before {
-        left: -400px;
-    }
-
-    .box4:hover:before {
-        width: 300%;
-    }
-
-    .about-section nav {
-        margin-left: 6px;
-    }
-
-}
 
 /* ---------------------our-satisfied-stutent section--------------------- */
 
@@ -463,11 +402,11 @@ footer p {
 /* ----------------------------------------
    ------------Courses-Section---------------
 -------------------------------------------*/
-.course {
+.page-course {
     height: 200px;
 }
 
-.course nav {
+.page-course nav {
     margin-left: 15px;
 }
 
@@ -505,23 +444,6 @@ footer p {
     margin-right: 2px;
 }
 
-@media only screen and (max-width:767px) {
-    .course nav {
-        margin-left: -10px;
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:990px) {
-    .course {
-        height: 10vh !important;
-    }
-
-    .course nav {
-        margin-left: 5px;
-    }
-
-}
-
 
 
 
@@ -549,13 +471,13 @@ footer p {
 
     .product {
         top: 0;
-        left: -20px;
+        left: 0px;
         width: 310px;
     }
 
     .product1 {
-        top: 85%;
-        left: -25px;
+        top: 45%;
+        left: 0;
         width: 310px;
     }
 
@@ -567,11 +489,33 @@ footer p {
 
     footer {
         padding-left: 20px;
-        margin-top: 180%;
     }
 
     .footer-links input[type=email] {
         width: 100%;
+    }
+
+    /* about-section */
+    .box4-home:before {
+        left: -400px;
+    }
+
+    .box4-home:hover:before {
+        width: 300%;
+    }
+
+    /* about-page */
+    .about-section nav {
+        margin-left: 6px;
+    }
+
+    /* course-page */
+    .page-course nav {
+        margin-left: -10px;
+    }
+
+    .all-page-section nav {
+        margin-left: 0px;
     }
 }
 
@@ -593,8 +537,18 @@ footer p {
         left: -20px;
     }
 
-    footer {
-        margin-top: 100px;
+    /* about-page */
+    .box4-home {
+        margin-bottom: 30px;
+    }
+
+    /* course-page */
+    .page-course {
+        height: 10vh;
+    }
+
+    .page-course nav {
+        margin-left: 5px;
     }
 }
 
