@@ -829,6 +829,37 @@ footer p {
     padding-top: 20px;
 }
 
+/* --------------contact-form------------ */
+.mesage-details {
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.mesage-details form input {
+    text-align: left !important;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.mesage-details textarea {
+    border: 1px solid var(--primary-color);
+}
+
+.mesage-details form a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: black;
+    border: 1px solid var(--primary-color);
+    transition: .5s;
+}
+
+.mesage-details form a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 
 
 
