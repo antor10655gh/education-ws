@@ -6,12 +6,20 @@
     padding: 0;
 }
 
+/* ---------------------common-style---------------------- */
+
 :root {
     --primary-color: #0eb582;
     --bg-hover: #1aaa7a;
     --p-color: gray;
     --black: #444;
     --white: #fff;
+}
+
+.icon {
+    color: var(--primary-color);
+    font-size: 45px;
+    margin-bottom: 8px;
 }
 
 /* ------------offcanvas----------- */
@@ -813,8 +821,13 @@ footer p {
 }
 
 
-
-
+/* -----------------------------------------
+--------------contact-page------------------
+-------------------------------------------- */
+.contact-cell {
+    border: 2px solid var(--primary-color);
+    padding-top: 20px;
+}
 
 
 
